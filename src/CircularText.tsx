@@ -114,8 +114,8 @@ const CircularText: React.FC<CircularTextProps> = ({
             style={{
               transform,
               WebkitTransform: transform,
-              color: letter === 'S' ? '#FA0F56' : '#fff',
-              opacity: letter === 'S' ? 1 : 0.4
+              color: letter === 'S' || letter === '*' ? '#FA0F56' : '#fff',
+              opacity: letter === 'S' || letter === '*' ? 1 : 0.4
             }}
           >
             {letter}

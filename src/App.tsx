@@ -11,7 +11,7 @@ function App() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   
   // Array of available images
-  const images = ['/gfw.png', '/he.png', '/gfw2.png', 'af2.jpeg', '/he2.png', '/trase.jpeg', '/he3.jpeg', '/af.jpeg'];
+  const images = ['gfw.png', 'he.png', 'gfw2.png', 'af2.jpeg', 'he2.png', 'trase.jpeg', 'he3.jpeg', 'af.jpeg'];
 
   // Update cursor when caption is active
   useEffect(() => {
@@ -59,8 +59,8 @@ function App() {
             src={images[currentImageIndex]} 
             alt="Caption" 
             style={{ 
-              width: '350px', 
-              height: '280px', 
+              width: '550px', 
+              height: '380px', 
               objectFit: 'contain',
               borderRadius: '3px'
             }}
